@@ -1,0 +1,173 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: purple;
+    background: linear-gradient(#111, #ae00ff);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 4em;
+    height: 6em;
+    color: #fff;
+}
+
+.logo{
+    font-size: 2em;
+    font-weight: 800;
+}
+
+ul{
+    margin-right: 14em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1.5em;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+li a:hover{
+    border-bottom: 0.1em solid #fff;
+}
+
+.field-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 0.3em;
+}
+
+.field-search input{
+    border-radius: 1em;
+    padding: 0.3 1em;
+    border: 0.2em solid #fff;
+}
+
+.field-search img{
+    margin-top: 0.2em;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 0.3em;
+}
+
+.Turbos-fall{
+    position: absolute;
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.Turbos{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    pointer-events: none;
+}
+
+.Turbos img{
+    width: 5em;
+}
+
+.Turbos div{
+    position: absolute;
+    display: block;
+}
+
+.Turbos div:nth-child(1){
+    left: 20%;
+    animation: Turbosfall 20s infinite linear;
+}
+
+.Turbos div:nth-child(2){
+    left: 20%;
+    animation: Turbosfall 14s infinite linear;
+}
+
+.Turbos div:nth-child(3){
+    left: 20%;
+    animation: Turbosfall 12s infinite linear;
+}
+
+.Turbos div:nth-child(4){
+    left: 20%;
+    animation: Turbosfall 15s infinite linear;
+}
+
+.Turbos div:nth-child(5){
+    left: 20%;
+    animation: Turbosfall 18s infinite linear;
+}
+
+.Turbos div:nth-child(6){
+    left: 20%;
+    animation: Turbosfall 12s linear infinite;
+}
+
+.Turbos div:nth-child(7){
+    left: 20%;
+    animation: Turbosfall 14s infinite linear;
+}
+
+.Turbos div:nth-child(8){
+    left: 20%;
+    animation: Turbosfall 15s infinite linear;
+}
+
+@keyframes Turbosfall{
+0%{
+    opacity: 0;
+    top: -10;
+    transform: translateX(20px);
+}
+10%{
+    opacity: 1;
+}
+20%{
+    transform: translateX(-20px);
+}
+40%{
+    transform: translateX(-20px);
+}
+60%{
+    transform: translateX(-20px);
+}
+80%{
+    transform: translateX(-20px);
+}
+
+100%{
+    top: 110%;
+    transform: translateX(-20px);
+}
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 17em;
+}
+
+section p{
+    font-size: 1.5em;
+    color: #fff;
+}
+
+section img{
+    width: 25em;
+}
