@@ -1,0 +1,27 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: purple;
+    background: linear-gradient(#111, #ae00ff);
+    display: grid;
+    grid-template-areas: 
+    "cc cc cc"
+    "brac corp corp"
+    "pp pp pp";
+}
+
+.cabeca{
+    grid-area: cc;
+}
+
+.braco{
+    grid-area: brac;
+}
+
+.corpo{
+    grid-area: corp;
+}
+
+.pe{
+    grid-area: pp;
+}
