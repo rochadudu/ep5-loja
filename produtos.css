@@ -1,27 +1,55 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 body{
-    width: 100%;
-    height: 100vh;
-    background-color: purple;
-    background: linear-gradient(#111, #ae00ff);
-    display: grid;
-    grid-template-areas: 
-    "cc cc cc"
-    "brac corp corp"
-    "pp pp pp";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#ae00ff, #000000);
+}
+.elemento_pai{
+/*     border: 2px red solid;
+ */    display: flex;
+    justify-content: center;
+    width: 1200px;
+    padding: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.card{
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 3px 6px 9px #ffffff;
+    transition: 0.5s;
+    
+}
+.texto a{
+    display: block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.5s;
 }
 
-.cabeca{
-    grid-area: cc;
+.card:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.card:hover a{
+    background-color: #6200ff;
+    color: rgb(255, 255, 255);
+}
+.card:hover img{
+    filter: none;
 }
 
-.braco{
-    grid-area: brac;
-}
-
-.corpo{
-    grid-area: corp;
-}
-
-.pe{
-    grid-area: pp;
+.texto a:hover{
+    background-color: #6200ff;
 }
