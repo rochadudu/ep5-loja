@@ -3,12 +3,33 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(#ae00ff, #000000);
+
+    background-color: rgb(235, 0, 0);
+    background-image: url(fundo.jpg);
+    display: grid;
+    grid-template-areas: 
+        "cab cab cab"
+        "pri pri pri"
+        "rod rod rod";
+    grid-gap: 5px;
+    grid-template-columns: 20% auto auto;
+    grid-template-rows: auto 1000px auto;
 }
+
+.cabeca{
+    grid-area: cab;
+    
+}
+
+.corpo{
+    grid-area: pri;
+}
+
+.pe{
+    grid-area: rod;
+}
+
+
 .elemento_pai{
 /*     border: 2px red solid;
  */    display: flex;
