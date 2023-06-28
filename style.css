@@ -1,101 +1,115 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'poppins', sans-serif;
+header{
+    grid-area: cabe;
+    background-color: #ae00ff;
+    box-shadow: 3px 6px 9px 5px #000000; 
 }
-
+aside{
+    grid-area: brac;
+    background: linear-gradient(#ae00ff, #11111157);
+}
+main{
+    grid-area: prin;
+    background: linear-gradient(#ae00ff, #11111157);
+}
+footer{
+    grid-area: roda;
+    background-color: rgb(0, 0, 0);
+}
+section{
+    grid-area: secn;
+    background-color: aquamarine;
+    display: none;
+}
 body{
-    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/157/407/desktop-wallpaper-nissan-skyline-gtr-r32-before-sunrise-on-behance-r32-sunset.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: grid;
+    grid-template-areas: 
+    "cabe cabe"
+    "brac prin"
+    "roda roda";
+    grid-template-rows: 200px auto 200px;
+    grid-template-columns: 300px auto;
+    gap: 7px;
+}
+header img{
+    height: 150px;
+    width: auto;
+}
+@media only screen and (max-width: 820px) {
+    body{
+        grid-template-areas: 
+        "cabe"
+        "brac"
+        "prin"
+        "roda";
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 50px 500px 200px;
+    }   
+    header img{
+        display: none;
+    } 
+}
+@media only screen and (max-width: 480px) {
+    body{
+        grid-template-areas: 
+        "secn"
+        "prin"
+        "roda";
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 500px 100px;
+    }
+    section{
+        display: flex;
+    }
+    aside{
+        display: none;
+    }
+    header{
+        display: none;
     }
     
-    :root{
-        --gradiente:  linear-gradient(to right, #a95e1300, #11003800);
-        --amarelo: #a95e13;
-        --branco: #fff;
-        --preto: #171717;
-     }
-     *{
-         margin: 0;
-         padding: 0;
-         box-sizing:border-box;
-     }
-     
-     body{
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         height: 100vh;
-         background-color: var(--amarelo);
-         font-family: 'Poppins', sans-serif;
-     }
-     
-     form{
-         display: flex;
-         flex-direction: column;
-         background-color: var(--preto);
-         width: 360px;
-         height: 400px;
-         border-radius: 6px;
-         padding: 20px 30px;
-         box-shadow: 3px 3px 6px 2px rgba(0, 0, 0, 0.2);  
-     }
-     
-     form h2{
-         color: var(--amarelo);
-         font-size: 2rem;
-         text-align: center}
+}
 
-         section{
-             display: flex;
-             justify-content: center;
-             align-items: center;
-             min-height: 100vh;
-             width: 100%;
-             background: url(736059.png) no-repeat;
-             background-position: center;
-             background-size: cover;
-             width: 310px;
-             border-bottom:2px solid #000000 ;
-             }
-         {
-         margin-bottom: 20px;
-     }
-     
-     input{
-         height: 30px;
-         margin: 20px 0;
-         font-size: 16px;
-     }
-     
-     .input-field{
-         width: 100%;
-         font-size: 1.6rem;
-         color: var(--amarelo);
-     }
-     
-     input[type='text'], input[type='password'] {
-         width: 90%;
-         padding-left: 10px;
-         background-color: transparent;
-         border: none;
-         outline: none;
-         color: var(--amarelo);
-     }
-     
-     span{
-         content: '';
-         position: absolute;
-         top: 50px;
-         left: 0;
-         width: 0;
-         height: 1px;
-         margin-top: 10px;
-         background-color: var(--gradiente);
-     }
-     
-     input[type='text']:focus ~ span, input[type='password']:focus ~ span{
-         display: inline-block;
-         width: 100%;
-     }
+.elemento_pai{
+    /*     border: 2px red solid;
+     */    display: flex;
+        justify-content: center;
+        width: 1200px;
+        padding: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .card{
+        border-radius: 10px;
+        padding: 10px;
+        width: 300px;
+        margin: 20px;
+        text-align: center;
+        box-shadow: 3px 6px 9px #0000006b;
+        transition: 0.5s;
+        
+    }
+    .texto a{
+        display: block;
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    
+    .card:hover{
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+    .card:hover a{
+        background-color: #6200ff;
+        color: rgb(255, 255, 255);
+    }
+    .card:hover img{
+        filter: none;
+    }
+    
+    .texto a:hover{
+        background-color: #6200ff;
+    }
