@@ -6,14 +6,17 @@ header{
 aside{
     grid-area: brac;
     background: linear-gradient(#ae00ff, #11111157);
+    box-shadow: 3px 6px 9px 5px #000000; 
 }
 main{
     grid-area: prin;
     background: linear-gradient(#ae00ff, #11111157);
+    box-shadow: 3px 6px 9px 5px #000000; 
 }
 footer{
     grid-area: roda;
     background-color: rgb(0, 0, 0);
+    box-shadow: 3px 6px 9px 5px #000000; 
 }
 section{
     grid-area: secn;
@@ -29,6 +32,7 @@ body{
     grid-template-rows: 200px auto 200px;
     grid-template-columns: 300px auto;
     gap: 7px;
+    background: linear-gradient(#ae00ff, #11111157);
 }
 header img{
     height: 150px;
