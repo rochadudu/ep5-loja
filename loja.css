@@ -2,6 +2,7 @@ header{
     grid-area: cabe;
     background-color: #ae00ff;
     box-shadow: 3px 6px 9px 5px #000000; 
+
 }
 aside{
     grid-area: brac;
@@ -116,4 +117,20 @@ header img{
     
     .texto a:hover{
         background-color: #6200ff;
+    }
+
+    li{
+        margin: 100px;
+        display: inline;
+    }
+
+    .field-search{
+        margin: 1050px;
+        display: inline;
+    }
+
+    .card img{
+        width: auto;
+        height: 150px;
+        border-radius: 20px;
     }
