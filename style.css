@@ -221,7 +221,7 @@ body {
 .form_button{
     background-color: #00a2ff;
     border-radius: 10%;
-    font-size: 30px;
+    padding: 5%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     color: aliceblue;
     text-decoration: none;
