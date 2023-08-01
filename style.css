@@ -218,9 +218,13 @@ body {
     max-width: 300px;
 }
 
-.dudu{
+.form_button{
+    background-color: #00a2ff;
+    border-radius: 10%;
+    font-size: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     color: aliceblue;
-    background-color: #002fff;
     text-decoration: none;
     box-shadow: #222;
+    text-decoration-line: initial;
 }
