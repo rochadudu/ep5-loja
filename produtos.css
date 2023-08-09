@@ -1,6 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 header{
     grid-area: cabe;
-    background-color: #000000;
+    background: linear-gradient(to right, #00f7ff, #ff01f2);
 }
 
 header img{
@@ -16,7 +21,7 @@ main{
 }
 footer{
     grid-area: roda;
-    background-color: black;
+    background: linear-gradient(to right, #00f7ff, #ff01f2);
 }
 
 footer h3{
