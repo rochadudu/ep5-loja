@@ -16,8 +16,6 @@ header{
 aside{
     grid-area: brac;
     background-color: #ffffff;
-    width: 230px;
-    height: 2250px;
     margin: 10px;
     border: 1px solid #0000008a;
     padding: 10px;
@@ -29,11 +27,13 @@ main{
     background-color: #ffffff;
     border: 1px solid #0000008a;
     padding: 10px;
-    height: 2260px;
+    margin: 10px;
 }
 footer{
     grid-area: roda;
-    background-color: #000000;
+    background-color: #fdfdfd;
+    color: white;
+    text-align: center;
 }
 
 footer h3{
@@ -190,3 +190,6 @@ li{
     display: inline;
 }
 
+.footer-basico{
+    color: white;
+}
