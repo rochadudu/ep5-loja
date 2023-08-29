@@ -31,7 +31,7 @@ main{
 }
 footer{
     grid-area: roda;
-    background-color: #fdfdfd;
+    background-color: #000000;
     color: white;
     text-align: center;
 }
@@ -113,6 +113,7 @@ header img{
     box-shadow: 3px 6px 9px #000000;
     transition: 0.5s;
     text-align: center;
+    border-radius: 10px;
 }
 
 .card img{
@@ -193,3 +194,4 @@ li{
 .footer-basico{
     color: white;
 }
+
