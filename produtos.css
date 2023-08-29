@@ -12,6 +12,9 @@ header{
     text-decoration: none;
 }
 
+.a{
+    text-decoration: none;
+}
 
 aside{
     grid-area: brac;
@@ -50,7 +53,7 @@ body{
     "cabe cabe"
     "brac prin"
     "roda roda";
-    grid-template-rows: 230px auto 200px;
+    grid-template-rows: 230px auto auto;
     grid-template-columns: 300px auto;
     background-color: rgb(255, 254, 254);
     text-decoration: none;
