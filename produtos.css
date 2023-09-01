@@ -157,16 +157,7 @@ header img{
     top:20%;
 }
 
-.search-btn{
-    position: relative;
-    float: right;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 2s;
-}
+
 
 .search-txt{
     background-color: #f7f7f7;
@@ -183,7 +174,7 @@ header img{
 .texto a{
     display: block;
     padding: 10px 20px;
-    background-color: rgb(95, 207, 3);
+    background-color: #5fcf03;
     color: rgb(255, 255, 255);
     border-radius: 20px;
     text-decoration: none;
@@ -198,3 +189,12 @@ li{
     color: white;
 }
 
+.botao{
+    display: block;
+    padding: 10px 20px;
+    background-color: #5fcf03;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.5s;
+}
